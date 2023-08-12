@@ -19,10 +19,11 @@ main{
   flex-direction: column;
   align-items: center;
   gap: 20px;
-  box-shadow: -30px 20px 100px 10px rgba(251, 24, 78, 0.47);
+  box-shadow: -30px 20px 100px 10px rgba(251, 24, 78, 0.47),30px -20px 100px -5px #152cc1;
   border-radius: 30px;
   background: #FFF;
   padding: 50px;
+  width: 30vw;
 }
 h1{
 color: #2B2B2B;
@@ -31,6 +32,7 @@ input{
   font-size: 1.5em;
   border: 2px solid #2B2B2B;
   padding: 5px;
+  width: 100%;
 }
 input:focus{
   outline: none;
@@ -62,3 +64,21 @@ button{
   gap: 20px;
   font-size: 1.2em;
 }
+@media (max-width: 940px) {
+.calculator{
+  width: 40vw;
+}
+}
+
+@media (max-width: 700px) {
+  .calculator{
+    width: 50vw;
+  }
+  }
+  @media (max-width: 560px) {
+    .calculator{
+      text-align: center;
+      width: 70vw;
+      padding: 30px;
+    }
+    }
