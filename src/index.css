@@ -1,0 +1,64 @@
+body {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+main{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.calculator{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  box-shadow: -30px 20px 100px 10px rgba(251, 24, 78, 0.47);
+  border-radius: 30px;
+  background: #FFF;
+  padding: 50px;
+}
+h1{
+color: #2B2B2B;
+}
+input{
+  font-size: 1.5em;
+  border: 2px solid #2B2B2B;
+  padding: 5px;
+}
+input:focus{
+  outline: none;
+}
+.buttons{
+  display: flex;
+  gap: 20px;
+  width: 100%;
+}
+button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  font-size: 1.4em;
+  flex-grow: 1;
+  background: #2B2B2B;
+  border: none;
+  color: white;
+  font-weight: 800;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.error,.success{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-weight: 700;
+  gap: 20px;
+  font-size: 1.2em;
+}
