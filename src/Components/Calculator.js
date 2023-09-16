@@ -25,6 +25,12 @@ const Calculator = () => {
             setError("Num2 cannot be empty!")
             return;
         }
+        else if(isNaN(num1)){
+            setError("Num1 should be a number!")
+        }
+        else if(isNaN(num2)){
+            setError("Num2 should be a number!")
+        }
         else operation(op);
      }
 
